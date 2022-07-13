@@ -46,6 +46,8 @@ public class Simulator {
 		this.daIntervistare = new ArrayList<>(this.attori);
 		this.tempoSimulazione = 0;
 		
+		this.queue = new PriorityQueue<>();
+		
 		// primo evento
 		Actor a = null;
 		a = daIntervistare.get(rand.nextInt(daIntervistare.size()));
